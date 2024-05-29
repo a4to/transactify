@@ -1,0 +1,46 @@
+{
+  "name": "transactify",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "A module for quick and seamless integration with a multitude of payment gateways.",
+  "keywords": [
+    "payment",
+    "gateway",
+    "transactify",
+    "transaction",
+    "credit",
+    "card",
+    "paypal",
+    "stripe",
+    "yoco",
+    "payfast",
+    "payu",
+    "paygate",
+    "payment gateway",
+    "payment processor",
+    "payment integration",
+    "payment api",
+    "payment service",
+    "payment gateway integration"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/transactify.js"
+  },
+  "bin": {
+    "transactify": "./bin/transactify.js"
+  },
+  "author": {
+    "name": "Connor Etherington",
+    "email": "connor@concise.cc",
+    "url": "https://agentics.co.za"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/a4to/transactify"
+  },
+  "dependencies": {
+    "mongoose": "^8.4.0",
+    "prompts": "^2.4.2"
+  }
+}
