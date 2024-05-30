@@ -3,9 +3,9 @@ const path = require('path');
 const mongoose = require('mongoose');
 
 class Transactify {
-  constructor(provider, dbType = 'json') {
+  constructor(provider, store = 'json') {
     this.provider = provider;
-    this.dbType = dbType;
+    this.dbType = store
     this.config = require('./.transactify.json');
     this.priceIndex = this.config.priceIndex;
     this.dbPath = path.join(process.cwd(), 'transactions.json');
@@ -24,7 +24,7 @@ class Transactify {
     const provider = this.provider.toLowerCase();
 
     try {
-      const providerModule = require(`./lib/providers/${provider}/pay`);
+      const providerModule = require(`./lib/providers/${provider}.js`);
       await providerModule(req, res);
     } catch (error) {
       res.status(400).json({ message: 'Payment failed', data: error });
