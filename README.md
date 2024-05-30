@@ -85,18 +85,13 @@ Edit the return, cancel, and notify URLs for transactions.
 
 Configuration details are stored in `~/.config/transactify/config.json`.
 
+
 ## Development
 
 To run the project in development mode:
 
 ```sh
 npm start
-```
-
-To run tests:
-
-```sh
-npm test
 ```
 
 ## License
